@@ -1,0 +1,18 @@
+﻿@model SearchMovie
+
+
+<div class ="row">
+    <div class="col-3">
+        <form asp-action = "MovieSearch">
+            <div class="form-group">
+                <label asp-for="SearchTerm" class="control-label"></label>
+                <input asp-for="SearchTerm" class="form-control" />
+                <span asp-validation-for="SearchTerm" class="text-danger"></span>
+            </div><br />
+            <div class="form-group">
+                <input type="submit" value="MovieSearch" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class = "col-6></div>
+</div>

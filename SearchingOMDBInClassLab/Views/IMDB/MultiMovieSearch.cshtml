@@ -1,0 +1,27 @@
+﻿@model MultiMovieSearch
+
+<div class ="row">
+    <div class="col-3">
+        <form asp-action = "MultiMovieResult">
+            <div class="form-group">
+                <label asp-for="Movie1" class="control-label"></label>
+                <input asp-for="Movie1" class="form-control" />
+                <span asp-validation-for="Movie1" class="text-danger"></span>
+            </div><br />
+            <div class="form-group">
+                <label asp-for="Movie2" class="control-label"></label>
+                <input asp-for="Movie2" class="form-control" />
+                <span asp-validation-for="Movie2" class="text-danger"></span>
+            </div><br />
+            <div class="form-group">
+                <label asp-for="Movie3" class="control-label"></label>
+                <input asp-for="Movie3" class="form-control" />
+                <span asp-validation-for="Movie3" class="text-danger"></span>
+            </div><br />
+            <div class="form-group">
+                <input type="submit" value="MultiMovieResult" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class = "col-6></div>
+</div>

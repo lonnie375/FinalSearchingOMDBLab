@@ -1,0 +1,15 @@
+﻿@model List<MovieInfo>
+
+    <div class="row">
+        @foreach(MovieInfo detail in Model){
+      <div class="card border-primary mb-3" style="width: 18rem;">
+  <img class="card-img-top" src=@detail.Poster alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">@detail.Title</h5>
+    <p class="card-text">@detail.Plot.</p>
+    <h5>Actors</h5>
+    <p class="card-text">@detail.Actors</p>
+  </div>
+</div>
+        }
+    </div>
